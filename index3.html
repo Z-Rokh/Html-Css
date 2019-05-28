@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style3.css">
+    <title>Title</title>
+</head>
+<body>
+<!--  header -->
+<header id="head">
+    <div class="container branding">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjE1OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjIxLjI0NCA3Ny45MjRjLjAwMS4wNzMuMDA2LjE0NC4wMDYuMjE3IDAgMjMuNDU0LTE4Ljk3MiA0Mi40NjgtNDIuMzc2IDQyLjQ2OC0yMy40MDQgMC00Mi4zNzYtMTkuMDE0LTQyLjM3Ni00Mi40NjhWOS4yOGMwLTUuMTI2IDQuMTQ3LTkuMjgxIDkuMjYyLTkuMjgxIDUuMTE0IDAgOS4yNiA0LjE1NSA5LjI2IDkuMjh2NjguODZjMCAxMy4yMDQgMTAuNjggMjMuOTA3IDIzLjg1NCAyMy45MDcgMTMuMTc1IDAgMjMuODU0LTEwLjcwMyAyMy44NTQtMjMuOTA2IDAtLjA3My0uMDEtLjE0NC0uMDExLS4yMTd2LTE1LjI3YzAtNS4xMjkgNC4xNS05LjI4NiA5LjI2Ny05LjI4NiA1LjExOCAwIDkuMjY2IDQuMTU3IDkuMjY2IDkuMjg2djE1LjI3MWgtLjAwNnptLTU1LjcwMyA1OC40NjJjNi4yMzIgMCAxMS4yODMgNS4wNjIgMTEuMjgzIDExLjMwNyAwIDYuMjQ0LTUuMDUxIDExLjMwNy0xMS4yODMgMTEuMzA3aC0uMDIxYy02LjIzIDAtMTEuMjgyLTUuMDYzLTExLjI4Mi0xMS4zMDcgMC02LjI0NSA1LjA1MS0xMS4zMDcgMTEuMjgyLTExLjMwN2guMDIxem0yNi42ODcgMGM2LjIzMiAwIDExLjI4MyA1LjA2MiAxMS4yODMgMTEuMzA3IDAgNi4yNDQtNS4wNTEgMTEuMzA3LTExLjI4MyAxMS4zMDdoLS4wMmMtNi4yMzIgMC0xMS4yODMtNS4wNjMtMTEuMjgzLTExLjMwNyAwLTYuMjQ1IDUuMDUxLTExLjMwNyAxMS4yODItMTEuMzA3aC4wMjF6TTEwOS4zNDEgMGM1LjExNSAwIDkuMjYxIDQuMTU1IDkuMjYxIDkuMjh2NjkuMDc3YzAgMjMuNDU0LTE4Ljk3MiA0Mi40NjgtNDIuMzc2IDQyLjQ2OHYtLjI0N2MtLjIwOC4wMTQtLjQxNi4wMy0uNjI4LjAzLTQuNTAyIDAtOC4yMzYtMy4yNTktOS4wMDItNy41NWwtMTcuOTc5IDE4LjAxN2E5LjI0NSA5LjI0NSAwIDAgMS0xMy4wOTYgMGMtMy42MTctMy42MjQtMy42MTctOS41IDAtMTMuMTI1bDIzLjcyMi0yMy43NzRjOS4zMTYtOS4zMzUgOS4zMTYtMjQuNDcyIDAtMzMuODA4LTkuMzE1LTkuMzM1LTI0LjQyLTkuMzM1LTMzLjczNSAwLTkuMzE1IDkuMzM2LTkuMzE1IDI0LjQ3MyAwIDMzLjgwOCAzLjYxNyAzLjYyNSAzLjYxNyA5LjUwMSAwIDEzLjEyNmE5LjI0NyA5LjI0NyAwIDAgMS0xMy4wOTYgMGMtMTYuNTUtMTYuNTg1LTE2LjU1LTQzLjQ3NCAwLTYwLjA1OSAxNi41NDgtMTYuNTg0IDQzLjM4LTE2LjU4NCA1OS45MjggMCAxNC45NTggMTQuOTkxIDE2LjM5MyAzOC40IDQuMzA4IDU1LjAwOSAxMi45OC0uMjI2IDIzLjQzMy0xMC44MzQgMjMuNDMzLTIzLjg5NVY5LjI4YzAtNS4xMjYgNC4xNDYtOS4yODEgOS4yNi05LjI4MXptMTQ2LjI4IDYyLjkzN0wyNTYgNzkuMjYzaC0uMDA5Yy0uMTA1IDIzLjA1NS0xMC4yMzkgNDMuNzM2LTI2LjI1NCA1Ny44ODUtLjAyMi4wMi0uMDQyLjAzMy0uMDY0LjA1MWE5LjQxNiA5LjQxNiAwIDAgMS02LjI3MyAyLjM5NGMtNS4yMyAwLTkuNDctNC4yNS05LjQ3LTkuNDkyYTkuNDcgOS40NyAwIDAgMSAzLjIwMi03LjEwM2MuMDMzLS4wMzUuMDYxLS4wNzEuMTAyLS4xMDYgMTIuMTU2LTEwLjc0NCAxOS44MjQtMjYuNDcgMTkuODI0LTQzLjk5MWguMTMzbC0uMzgtMTUuOTY0YzAtNS4yMDUgNC4yMTEtOS40MjUgOS40MDUtOS40MjUgNS4xOTQgMCA5LjQwNSA0LjIyIDkuNDA1IDkuNDI1eiIgZmlsbD0iIzJEMkYyRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="">
+    </div>
+</header>
+
+
+<!-- section -->
+<section class="container">
+    <div class="rows main-rows">
+        <div class="colm-1">
+            <div >
+                <h4>1,200 تومان</h4>
+            </div>
+            <div class="day">
+                7 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علی قدیری</h4>
+            </div>
+            <div>
+                <h5>پایانه دستواره - پایانه مترو قیطریه</h5>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img1.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>101 تومان</h4>
+            </div>
+            <div class="day">
+                8 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علیرضا کمالی</h4>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img3.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>1,200 تومان</h4>
+            </div>
+            <div class="day">
+                8 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>احمدرضا باقری</h4>
+            </div>
+            <div class="receive">
+                <button><a href="#">دریافت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img2.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows main-rows">
+        <div class="colm-1">
+            <div >
+                <h4>100 تومان</h4>
+            </div>
+            <div class="day">
+                یک ماه پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علی قدیری</h4>
+            </div>
+            <div>
+                <h5>پایانه دستواره - پایانه مترو قیطریه</h5>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img1.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>500 تومان</h4>
+            </div>
+            <div class="day">
+                یک ماه پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>افزایش اعتبار</h4>
+            </div>
+            <div class="credit">
+                <button><a href="#">اعتبار</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="https://files.virgool.io/upload/publication/3ir4g4kdpo36/asxe0m.png" alt="alii">
+        </div>
+    </div>
+                                               <!-- inja -->
+    <div class="rows main-rows">
+        <div class="colm-1">
+            <div >
+                <h4>1,200 تومان</h4>
+            </div>
+            <div class="day">
+                7 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علی قدیری</h4>
+            </div>
+            <div>
+                <h5>پایانه دستواره - پایانه مترو قیطریه</h5>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img1.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>101 تومان</h4>
+            </div>
+            <div class="day">
+                8 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علیرضا کمالی</h4>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img3.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>1,200 تومان</h4>
+            </div>
+            <div class="day">
+                8 روز پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>احمدرضا باقری</h4>
+            </div>
+            <div class="receive">
+                <button><a href="#">دریافت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img2.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows main-rows">
+        <div class="colm-1">
+            <div >
+                <h4>100 تومان</h4>
+            </div>
+            <div class="day">
+                یک ماه پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>علی قدیری</h4>
+            </div>
+            <div>
+                <h5>پایانه دستواره - پایانه مترو قیطریه</h5>
+            </div>
+            <div>
+                <button><a href="#">پرداخت</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="./img/img1.jpg" alt="alii">
+        </div>
+    </div>
+    <div class="rows other-rows">
+        <div class="colm-1">
+            <div >
+                <h4>500 تومان</h4>
+            </div>
+            <div class="day">
+                یک ماه پیش
+            </div>
+        </div>
+        <div class="colm-2">
+            <div>
+                <h4>افزایش اعتبار</h4>
+            </div>
+            <div class="credit">
+                <button><a href="#">اعتبار</a></button>
+            </div>
+        </div>
+        <div class="colm-3">
+            <img src="https://files.virgool.io/upload/publication/3ir4g4kdpo36/asxe0m.png" alt="alii">
+        </div>
+    </div>
+    <div class="rows empity">
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- footer -->
+<footer>
+    <div class="container column">
+        <div><a href="#"><i class="material-icons">person</i></a></div>
+        <div><a href="#"><i class="material-icons">receipt</i></a></div>
+        <div><a href="#"><i class="material-icons">home</i></a></div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <a href="#">
+        <div class="box-area-even">
+            <div class="flex-box">
+                <div class="light-icon">
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="inf-box">
+                    <h4>قوانین و مقررات</h4>
+                </div>
+                <div>
+                    <i class="material-icons">book</i>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="box-area-odd">
+            <div class="flex-box">
+                <div class="light-icon">
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="inf-box">
+                    <h4>حریم خصوصی</h4>
+                </div>
+                <div>
+                    <i class="material-icons">face</i>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="box-area-even">
+            <div class="flex-box">
+                <div class="light-icon">
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="inf-box">
+                    <h4>نسخه برنامه 1.0.6</h4>
+                </div>
+                <div>
+                    <i class="material-icons">error</i>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="box-area-odd">
+            <div class="flex-box">
+                <div class="light-icon">
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="inf-box last-child">
+                    <h4 >خروج از حساب کاربری</h4>
+                </div>
+                <div class="last-child">
+                    <i class="material-icons">exit_to_app</i>
+                </div>
+            </div>
+        </div>
+    </a>
+</section>
+

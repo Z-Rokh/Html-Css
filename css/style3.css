@@ -1,0 +1,141 @@
+:root{
+    --light-color: #666666;
+    --main-color:#FFAA14;
+}
+
+body{
+    margin: 0;
+    background-color: #f7f7f7;
+    height: 100vh;
+    line-height: 1em;
+}
+
+.container{
+    margin: auto;
+    overflow: hidden;
+}
+.branding {
+    text-align: center;
+    margin:1.5vh 0;
+}
+.branding img{
+    width: 8vh;
+    height:6vh;
+}
+a {
+    text-decoration: none;
+}
+
+/* header pic3*/
+
+header{
+    border: 0.5px solid #f7f7f7;
+    height: 10vh;
+}
+
+
+/*section*/
+section .rows{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    font-size: 1.1em;
+    align-items: center;
+}
+section .rows:nth-child(even){
+    background-color: #ebebeb;
+}
+.main-rows{
+    grid-auto-rows: minmax(16.5vh , auto);
+}
+.other-rows{
+    grid-auto-rows: minmax(14.5vh , auto);
+}
+
+.rows .colm-1{
+    text-align: left;
+    padding-left: 1vw;
+    color: #252525;
+}
+.colm-1 .day{
+    margin-top: 6vh;
+    color: var(--light-color);
+}
+
+.rows .colm-2{
+    text-align: right;
+}
+.rows h4{
+    padding: 0;
+    margin: 1vh;
+    color: #252525;
+}
+.rows h5{
+    padding: 0;
+    margin: 1vh;
+    color: #252525;
+}
+.colm-2 button{
+    border: 1px solid var(--light-color);
+    border-radius: 8px;
+    height: 4.5vh;
+    width: 11vh;
+    font-size: 3vh;
+}
+.colm-2 a{
+    color: var(--light-color);
+}
+
+.colm-3{
+    text-align: center;
+    justify-content: center;
+}
+.colm-3 img{
+    justify-content: center;
+    border-radius: 50%;
+    width: 11vh;
+    height: 11vh;
+}
+.rows .receive button{
+    border: 1px solid #65c6ac;
+}
+.rows .credit button{
+    border: 1px solid  var(--main-color);
+}
+.rows .receive a{
+    color: #65c6ac;
+}
+.rows .credit a{
+    color: var(--main-color);
+}
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: #dcdcdc;
+    height: 11vh;
+}
+footer .column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column div{
+    text-align: center;
+    margin-top: 4vh;
+}
+.column a{
+    color: #666666;
+}
+.column i{
+    font-size: 35px;
+}
+
+
+
+
+
+
+

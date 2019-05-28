@@ -1,0 +1,131 @@
+:root{
+    --light-color:#666666;
+    --main-color:#FFAA14;
+}
+body{
+    /*font:15px/1.5 Arial , Helvetical,sans-serif;*/
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.container{
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+}
+.branding h1{
+    color: white;
+    margin: 1.5rem;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+section .usual_size{
+    font-size: 20px;
+}
+/* header pic1*/
+header {
+    background: #000000;
+    color: #ffffff;
+    position: relative;
+    height: 5rem;
+}
+header #sign{
+    position:absolute;
+    padding-left: 2rem;
+    padding-top: 1.75rem;
+}
+
+
+/* showcase pic1 */
+section #heading{
+    margin: 40px 0 20px 0 ;
+}
+section img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+section #name{
+    padding: 10px;
+    font-size: 25px;
+}
+section .text-light{
+    color: var(--light-color)
+}
+#adr{
+    margin-bottom: 40px;
+}
+#adr h5{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+#adr p{
+    margin-top: 2px;
+}
+#price{
+    margin-top: 10px;
+}
+#change{
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+#change a{
+    color: var(--main-color);
+}
+#pay{
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    height: 50px;
+    margin: 0 8%;
+}
+#pay a{
+    color: white;
+}
+#pay p{
+    margin: 15px 0;
+}
+
+/*footer*/
+
+footer{
+    background: #dcdcdc;
+    height: 60px;
+    margin-bottom:0;
+    margin-top: 50px;
+    width: 100%;
+}
+footer .column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column div{
+    margin-top:20px;
+}
+.column a{
+    color: #666666;
+}
+.column i{
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
